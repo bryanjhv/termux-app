@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
 
     dependencies {
-        implementation "androidx.annotation:annotation:1.0.1"
+        implementation "androidx.annotation:annotation:1.1.0"
         implementation "androidx.viewpager:viewpager:1.0.0"
         implementation "androidx.drawerlayout:drawerlayout:1.0.0"
         implementation project(":terminal-view")
@@ -14,8 +14,8 @@ android {
         applicationId "com.termux"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 83
-        versionName "0.83"
+        versionCode 85
+        versionName "0.85"
 
         externalNativeBuild {
             ndkBuild {
@@ -53,10 +53,17 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
+    testImplementation 'org.robolectric:robolectric:4.3'
 }
 
 task versionName {
