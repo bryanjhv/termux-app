@@ -1,5 +1,9 @@
 # Termux application
 
+**THIS IS A FORK PROVIDING ANDROID 5+ VERSIONS OF TERMUX**  
+**STARTS FROM VERSION 0.83 (PLAY STORE) UPWARDS UNTIL LATEST**  
+**PLEASE NOTE THEY HAVE NOT BEEN TESTED, SO EXPECT BUGS/CRASHES**
+
 [![Build status](https://api.cirrus-ci.com/github/termux/termux-app.svg?branch=master)](https://cirrus-ci.com/termux/termux-app)
 [![Join the chat at https://gitter.im/termux/termux](https://badges.gitter.im/termux/termux.svg)](https://gitter.im/termux/termux)
 
