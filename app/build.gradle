@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
+    ndkVersion '21.0.6113669'
 
     dependencies {
         implementation "androidx.annotation:annotation:1.1.0"
@@ -14,8 +15,8 @@ android {
         applicationId "com.termux"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 91
-        versionName "0.91"
+        versionCode 93
+        versionName "0.93"
 
         externalNativeBuild {
             ndkBuild {
@@ -63,7 +64,7 @@ android {
 
 dependencies {
     testImplementation 'junit:junit:4.13'
-    testImplementation 'org.robolectric:robolectric:4.3'
+    testImplementation 'org.robolectric:robolectric:4.3.1'
 }
 
 task versionName {
