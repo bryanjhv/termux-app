@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-    ndkVersion '21.0.6113669'
+    ndkVersion '21.3.6528147'
 
     dependencies {
         implementation "androidx.annotation:annotation:1.1.0"
@@ -15,8 +15,8 @@ android {
         applicationId "com.termux"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 93
-        versionName "0.93"
+        versionCode 95
+        versionName "0.95"
 
         externalNativeBuild {
             ndkBuild {
